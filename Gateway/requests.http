@@ -1,0 +1,105 @@
+GET http://localhost:8080/players
+
+###
+
+GET http://localhost:8080/clubs
+
+###
+
+GET http://localhost:8080/players/1
+
+###
+
+GET http://localhost:8080/players/8
+
+###
+
+GET http://localhost:8080/clubs/1/players
+
+###
+
+GET http://localhost:8080/clubs/1
+
+###
+
+GET http://localhost:8080/clubs/10
+
+###
+
+POST http://localhost:8080/players
+Content-Type: application/json
+
+{
+  "name": "Andrzej",
+  "club" : 1,
+  "age": 3
+}
+
+###
+POST http://localhost:8080/clubs
+Content-Type: application/json
+
+{
+  "name": "Kormoran Zwierzewo",
+  "money": 1.2,
+  "league": 2
+}
+
+###
+PUT http://localhost:8080/players/1
+Content-Type: application/json
+
+{
+  "name": "Jan",
+  "club" : 1,
+  "age": 2
+}
+
+###
+
+PUT http://localhost:8080/players/10
+Content-Type: application/json
+
+{
+"name": "Jan",
+"club" : 1,
+"age": 2
+}
+
+###
+
+PUT http://localhost:8080/clubs/1
+Content-Type: application/json
+
+{
+  "name": "Lechia",
+  "money": 1.3,
+  "league": 2
+}
+###
+PUT http://localhost:8080/clubs/10
+Content-Type: application/json
+
+{
+  "name": "AAA",
+  "money": 1.2,
+  "league": 2
+}
+
+
+###
+
+DELETE http://localhost:8080/clubs/1
+
+###
+
+DELETE http://localhost:8080/clubs/5
+
+####
+
+DELETE http://localhost:8080/players/2
+
+###
+
+DELETE http://localhost:8080/players/10
+

@@ -1,0 +1,6 @@
+1.Dwie odzielne aplikacje: Chracter management, Profession menagement (git) 
+2.Dwie oddzielne bazy danych (git)
+3.Proffesion management ma mechanizmy związane z Proffesion
+4.Character ma tylko dostęp do takich mechanizmów żeby utrzymać relację i hierarchię (GIT)
+5.komunikacja między aplikacjami aby poinformować Character że usunięto lub dodano Proffesion(uproszczony element w bazie danych) (GIT)
+6.Spring Cloud Gateway
