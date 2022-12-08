@@ -14,12 +14,27 @@ import java.util.stream.Collectors;
 @ToString
 @EqualsAndHashCode
 public class GetClubsResponse {
-    private List<String> clubs;
+
+    @Getter
+    @Setter
+    @Builder
+    @AllArgsConstructor
+    @ToString
+    @EqualsAndHashCode
+    public static class SimpleClub{
+        Long clubId;
+        String name;
+    }
+
+    private List<SimpleClub> clubs;
 
     public static GetClubsResponse toClubsResponse(List<Club> clubs){
        return GetClubsResponse.builder()
                .clubs(clubs.stream()
-                       .map(Club::getName)
+                       .map(club -> SimpleClub.builder()
+                               .clubId(club.getId())
+                               .name(club.getName())
+                               .build())
                        .collect(Collectors.toList()))
                .build();
     }

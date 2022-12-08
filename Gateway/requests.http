@@ -14,7 +14,7 @@ GET http://localhost:8080/players/8
 
 ###
 
-GET http://localhost:8080/clubs/1/players
+GET http:/  /localhost:8080/clubs/1/players
 
 ###
 
