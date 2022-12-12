@@ -47,16 +47,7 @@ function displayPlayers(players) {
     })
 }
 
-function addPlayerButton(){
-    let form = document.createElement('form');
-    form.setAttribute('action',"../player_add/player_add.html?club=" + getParameterByName('club'));
-    let button = document.createElement('input');
-    button.setAttribute('type', 'submit');
-    button.setAttribute('value', "Player add");
-    form.appendChild(button);
-    let main_section = document.getElementById('main-section');
-    main_section.appendChild(form);
-}
+
 /**
  * Creates single table row for entity.
  *
