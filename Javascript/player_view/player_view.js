@@ -1,9 +1,5 @@
 import {
     getParameterByName,
-    clearElementChildren,
-    createLinkCell,
-    createButtonCell,
-    createTextCell,
     setTextNode
 } from '../js/dom_utils.js';
 import {getBackendUrl} from '../js/configuration.js';
