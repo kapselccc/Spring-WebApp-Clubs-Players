@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>  
+  <meta name="author" content="Kacper Cencelewski"/>
+  <title>Club</title>
+  <link rel="stylesheet" href="../style.css"/>
+  <link rel="stylesheet" href="player_add.css"/>
+  <script src="../script.js" defer="defer"></script>
+  <script type="module" src="player_add.js" defer="defer"></script>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1>Club</h1>
+  </header>
+
+  <nav class="navigation-bar">
+    <ul>
+        <li><a href="../index.html">main</a></li>
+        <li><a href="../club_list/club_list.html">clubs</a></li>
+    </ul>
+</nav>
+
+    <section class="main-section">
+      <article class="text--justified">
+        <header><h2>Adding player form:</h2></header>
+
+        <form class="player_form" id="infoForm">
+
+          <label for="name">Name:</label>
+          <input class="ui-control ui-input" id="name" name="name"/>
+
+          <label for="age">Age:</label>
+          <input class="ui-control ui-input" id="age" name="age" type="number"/>
+
+          <input class="ui-control ui-button" type="submit" name="Update"/>
+        </form>
+      </article>
+
+    </section>
+
+  <footer class="footer">
+    <p>Kacper Cencelewski, 184848</p>
+  </footer>
+  </div>
+  </body>
+</html>

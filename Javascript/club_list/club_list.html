@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Laboratory nb.4"/>
+        <meta name="keywords" content="Lab4"/>
+        <meta name="author" content="Kacper Cencelewski"/>
+        <title>Lab4</title>
+        <link rel="stylesheet" href="../style.css"/>
+        <script src="../script.js" async="defer"></script>
+        <script type="module" src="club_list.js" defer="defer"></script>
+        <!-- module allows to import functions between separate files -->
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Club</h1>
+            </header>
+
+            <nav class="navigation-bar">
+                <ul>
+                    <li><a href="../index.html">main</a></li>
+                    <li><a href="club_list.html">clubs</a></li>
+                </ul>
+            </nav>
+
+            <section class="main-section">
+                <article class="text--justified">
+                    <header><h2>Clubs</h2></header>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>name</th>
+                                <th>view</th>
+                                <th>edit</th>
+                                <th>delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>name</td>
+                                <td><a href="#">view</a></td>
+                                <td><a href='#'>edit</a></td>
+                                <td>
+                                    <button class="ui-button ui-control">delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+
+                <form action="../club_add/club_add.html">
+                    <input type="submit" value="Club add" />
+                </form>
+
+            </section>
+            
+            <footer class="footer">
+                <p>Kacper Cencelewski, 184848</p>
+            </footer>
+
+        </div>
+    </body>
+</html>
