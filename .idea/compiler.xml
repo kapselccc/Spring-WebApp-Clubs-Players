@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Gateway" />
+        <module name="lab1" />
+        <module name="lab1 (1)" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Gateway" target="16" />
+      <module name="lab1" target="16" />
+      <module name="lab1 (1)" target="16" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Gateway" options="-parameters --add-modules java.base" />
+      <module name="lab1" options="-parameters --add-modules java.base" />
+      <module name="lab1 (1)" options="-parameters --add-modules java.base" />
+    </option>
+  </component>
+</project>

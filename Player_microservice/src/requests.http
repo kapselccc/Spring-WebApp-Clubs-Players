@@ -1,0 +1,103 @@
+GET http://localhost:8080/players
+
+###
+
+GET http://localhost:8080/players/1
+
+###
+
+GET http://localhost:8080/players/8
+
+###
+
+POST http://localhost:8080/players
+Content-Type: application/json
+
+{
+  "name": "Łukasz",
+  "club" : 1,
+  "age": 1
+}
+
+###
+PUT http://localhost:8080/players/1
+Content-Type: application/json
+
+{
+  "name": "Jan",
+  "club" : 1,
+  "age": 2
+}
+
+###
+
+PUT http://localhost:8080/players/10
+Content-Type: application/json
+
+{
+"name": "Jan",
+"club" : 1,
+"age": 2
+}
+
+###
+
+GET http://localhost:8080/clubs
+
+###
+
+GET http://localhost:8080/clubs/1
+
+###
+GET http://localhost:8080/clubs/2/players
+
+###
+
+GET http://localhost:8080/clubs/5
+
+###
+
+POST http://localhost:8080/clubs
+Content-Type: application/json
+
+{
+  "name": "woj",
+  "moveSpeed": 1.2,
+  "armor": 2
+}
+
+###
+
+PUT http://localhost:8080/clubs/4
+Content-Type: application/json
+
+{
+  "name": "woj",
+  "moveSpeed": 1.2,
+  "armor": 2
+}
+###
+PUT http://localhost:8080/clubs/5
+Content-Type: application/json
+
+{
+"name": "woj",
+"moveSpeed": 1.2,
+"armor": 2
+}
+###
+
+DELETE http://localhost:8080/clubs/3
+
+###
+
+DELETE http://localhost:8080/clubs/5
+
+####
+
+DELETE http://localhost:8080/players/1
+
+###
+
+DELETE http://localhost:8080/players/10
+

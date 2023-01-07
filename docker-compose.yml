@@ -1,0 +1,54 @@
+version: '3.9'
+
+volumes:
+  gateway:
+  club:
+  player:
+  frontend:
+
+services:
+  gateway:
+    container_name: gateway
+    build: ./Gateway
+    env_file:
+      - .env
+    networks:
+      - lab5_network
+  club:
+    container_name: club
+    build: ./Club_microservice
+    env_file:
+      - .env
+    networks:
+      - lab5_network
+  player:
+    container_name: player
+    build: ./Player_microservice
+    env_file:
+      - .env
+    networks:
+      - lab5_network
+  frontend:
+    container_name: frontend
+    build: ./Javascript
+    env_file:
+      - .env
+    volumes:
+      - ./Javascript:/usr/src/app
+    networks:
+      - lab5_network
+  proxy:
+    container_name: proxy
+    build: ./Reverse_proxy
+    env_file:
+      - .env
+    ports:
+      - "80:80"
+    networks:
+      - lab5_network
+    tty: true
+    
+
+networks:
+  lab5_network:
+    driver: bridge
